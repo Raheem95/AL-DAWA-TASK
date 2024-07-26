@@ -1,0 +1,359 @@
+@font-face {
+  font-family: "MyFont";
+  src: url("/font/Changa-VariableFont_wght.ttf") format("woff2");
+  /* Add more src definitions for different font formats if necessary */
+}
+
+body {
+  margin: 0;
+  font-family: "MyFont", sans-serif !important;
+}
+
+.NavBar {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  background: #0c376c;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.logo {
+  position: absolute;
+  left: 20px;
+  width: 100px;
+  height: 100px;
+}
+
+.header {
+  padding: 5px 20px;
+  font-size: 30px;
+  color: #d4ea12;
+}
+
+.menu {
+  position: absolute;
+  right: 20px;
+  display: flex;
+  align-items: center;
+}
+.menu-item {
+  position: relative;
+  padding: 10px 20px;
+  text-align: center;
+  margin: 0px 10px;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  background-color: transparent;
+}
+.menu-item span {
+  width: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.menu-item:hover span {
+  width: 100%;
+  border: 1px solid #d4ea12;
+}
+.menu-item:hover {
+  color: #d4ea12;
+  text-decoration: none;
+}
+.slide-button {
+  position: relative;
+  width: 200px;
+  padding: 10px 40px;
+  text-align: center;
+  margin: 0px 10px;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.slide-button span {
+  background: #d4ea12;
+  height: 100%;
+  width: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 10px;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.slide-button:hover span {
+  width: 100%;
+}
+
+.slide-button:hover {
+  border: none;
+  color: white;
+}
+.logout {
+  padding: 15px;
+  font-size: 15px;
+  color: red;
+  background: white;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.logout:hover {
+  background: red;
+  color: white;
+}
+
+.main-div {
+  margin-top: 200px;
+}
+
+.form-container {
+  background: #f4f2f2;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.input_style {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #4d5961;
+  border: none;
+  border: 2px solid #e5e9eb;
+  font-size: 17px;
+  border-radius: 5px;
+}
+
+.submit {
+  padding: 10px 40px;
+  text-align: center;
+  border-radius: 10px;
+  background: #145994;
+  color: white;
+  font-size: 18px;
+  transition: 0.5s;
+  margin: 10px;
+}
+
+.submit:hover {
+  color: #145994;
+  background: white;
+}
+
+.reset {
+  padding: 10px 40px;
+  text-align: center;
+  border-radius: 10px;
+  background: #cb1414;
+  color: white;
+  font-size: 18px;
+  margin: 10px;
+  transition: 0.5s;
+}
+
+.reset:hover {
+  color: #cb1414;
+  background: white;
+}
+
+.model_label {
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #274557;
+  width: 100%;
+}
+
+.error_input {
+  border: 1px solid red !important;
+}
+
+.custom-alert {
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  padding: 20px;
+  width: 500px;
+  font-size: 20px;
+  text-align: center;
+  margin: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.custom-alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+.custom-alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.custom-alert-info {
+  color: #0c5460;
+  background-color: #d1ecf1;
+  border-color: #bee5eb;
+}
+
+.custom-confirm {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  width: 500px;
+  font-size: 20px;
+  text-align: center;
+  margin: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.custom-confirm .btn {
+  margin: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-confirm {
+  background-color: #5cb85c !important;
+  color: #fff !important;
+  border: 1px solid #4cae4c !important;
+}
+
+.btn-cancel {
+  background-color: #d9534f !important;
+  color: #fff !important;
+  border: 1px solid #d43f3a !important;
+}
+thead {
+  background-color: #4e83b2;
+}
+th {
+  border: 1px solid #d2d1d1;
+  color: white;
+  font-size: 14px;
+  padding: 5px;
+}
+td {
+  border: 1px solid #d2d1d1;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px;
+}
+.Result {
+  text-align: center;
+  font-size: 14px;
+}
+.view {
+  padding: 10px 20px;
+  background: #2e76ce;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  transition: 0.5s;
+  margin: 0 5px;
+}
+.view:hover {
+  color: #2e76ce;
+  border: 1px solid #2e76ce;
+  background: white;
+}
+.accept {
+  padding: 10px 20px;
+  background: #09c909;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  transition: 0.5s;
+  margin: 0 5px;
+}
+.accept:hover {
+  color: #09c909;
+  border: 1px solid #09c909;
+  background: white;
+}
+.reject {
+  padding: 10px 20px;
+  background: #e71d1d;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  transition: 0.5s;
+  margin: 0 5px;
+}
+.reject:hover {
+  color: #e71d1d;
+  border: 1px solid #e71d1d;
+  background: white;
+}
+.warning {
+  padding: 10px 20px;
+  background: #d46b09;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  transition: 0.5s;
+  margin: 0 5px;
+}
+.warning:hover {
+  color: #d46b09;
+  border: 1px solid #d46b09;
+  background: white;
+}
+.pending {
+  padding: 10px 20px;
+  background: #616361;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  transition: 0.5s;
+  margin: 0 5px;
+}
+
+/* access-denied */
+.access-denied {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+  justify-content: center;
+}
+.access-denied .icon {
+  margin: 50px;
+  font-size: 20.5em;
+}
+.access-denied span {
+  font-size: 5.5em;
+}
